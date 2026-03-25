@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Invites - Ewan Howell</title>
+  <meta name="description" content="Join Ewan Howell's Discord servers for resource packs, Blockbench plugins, and Minecraft resource pack development.">
+  <meta property="og:title" content="Discord Invites - Ewan Howell">
+  <meta property="og:description" content="Join Ewan Howell's Discord servers for resource packs, Blockbench plugins, and Minecraft resource pack development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.webp">
+  <meta name="theme-color" content="#DD5053">
+  <link rel="icon" type="image/webp" sizes="16x16" href="favicon/logo_16.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="favicon/logo_32.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background: #121212;
+      font-family: Arial, sans-serif;
+      color: #FFF;
+      color-scheme: dark;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: -2px 2px 1px #00000080;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      color: #999;
+      font-size: 1em;
+      margin-top: -20px;
+    }
+
+    .invites {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.invite {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      max-width: calc(100vw - 40px);
+      padding: 20px 25px;
+      background: #1A1A1A;
+      border-left: 3px solid;
+      text-decoration: none;
+      color: #FFF;
+      transition: background 0.15s;
+    }
+
+    a.invite:hover .invite-join {
+      background: #4452BB;
+    }
+
+    a.invite.ewan {
+      border-color: #DD5053;
+    }
+
+    a.invite.rps {
+      border-color: #77AC54;
+    }
+
+    .invite-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .invite-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .invite-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .invite-text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .invite-name {
+      font-size: 1.3em;
+      font-weight: 700;
+      text-shadow: -2px 2px 1px #00000080;
+    }
+
+    .invite-desc {
+      font-size: 0.9em;
+      color: #CCC;
+      line-height: 1.5;
+    }
+
+    .invite-reasons {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .invite-reasons li {
+      font-size: 0.8em;
+      color: #999;
+      line-height: 1.4;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .invite-reasons ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 6px;
+      padding-left: 10px;
+    }
+
+    .invite-reasons ul li {
+      font-size: 1em;
+      color: #777;
+    }
+
+    .invite-reasons ul li::before {
+      top: 5px;
+      width: 4px;
+      height: 4px;
+      background: #4E4E4E;
+    }
+
+    .invite-reasons li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #5E5E5E;
+    }
+
+    .invite-join {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px;
+      margin-top: 20px;
+      background: #5865F2;
+      color: #FFF;
+      font-weight: 700;
+      font-size: 0.9em;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+
+    @media (max-width: 600px) {
+      .invite-content {
+        flex-direction: column;
+      }
+
+
+      .invite-icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Discord Invites</h1>
+  <p class="subtitle">Choose a server to join</p>
+  <div class="invites">
+    <a class="invite ewan" target="_blank" href="https://discord.com/invite/pkRxtGw">
+      <div class="invite-content">
+        <div class="invite-header">
+          <img class="invite-icon" src="images/logo.webp" alt="Ewan's Server">
+          <span class="invite-name">Ewan's Server</span>
+        </div>
+        <div class="invite-text">
+          <span class="invite-desc">The home for all of my projects and creations.</span>
+          <ul class="invite-reasons">
+            <li>Updates on my resource packs and projects</li>
+            <li>Support and suggestions for the Wynem Discord bot</li>
+            <li>Help with my Blockbench plugins: Minecraft Title Generator, CEM Template Loader, Asset Browser, and more</li>
+            <li>General chat and community</li>
+          </ul>
+        </div>
+      </div>
+      <div class="invite-join"><i class="fa-brands fa-discord"></i> Join Server</div>
+    </a>
+    <a class="invite rps" target="_blank" href="https://discord.com/invite/BBRcuWgEvR">
+      <div class="invite-content">
+        <div class="invite-header">
+          <img class="invite-icon" src="images/rps.webp" alt="Resource Pack Development">
+          <span class="invite-name">Resource Pack Development</span>
+        </div>
+        <div class="invite-text">
+          <span class="invite-desc">A community for Minecraft resource pack developers of all skill levels.</span>
+          <ul class="invite-reasons">
+            <li>Vanilla, vanilla shaders, and modded pack development</li>
+            <li>Help and support for pack development</li>
+            <li>Showcase your resource packs</li>
+            <li>Get feedback on your work</li>
+            <li>Connect with developers of all skill levels</li>
+          </ul>
+        </div>
+      </div>
+      <div class="invite-join"><i class="fa-brands fa-discord"></i> Join Server</div>
+    </a>
+  </div>
+</body>
+</html>
