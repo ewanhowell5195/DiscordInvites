@@ -86,12 +86,6 @@
       flex: 1;
     }
 
-    .invite-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
     .invite-icon {
       width: 64px;
       height: 64px;
@@ -99,6 +93,11 @@
       object-fit: cover;
       flex-shrink: 0;
     }
+
+    .invite-icon.mobile {
+      display: none;
+    }
+
 
     .invite-text {
       display: flex;
@@ -133,27 +132,6 @@
       position: relative;
     }
 
-    .invite-reasons ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      margin-top: 6px;
-      padding-left: 10px;
-    }
-
-    .invite-reasons ul li {
-      font-size: 1em;
-      color: #777;
-    }
-
-    .invite-reasons ul li::before {
-      top: 5px;
-      width: 4px;
-      height: 4px;
-      background: #4E4E4E;
-    }
-
     .invite-reasons li::before {
       content: "";
       position: absolute;
@@ -181,14 +159,20 @@
     }
 
     @media (max-width: 600px) {
-      .invite-content {
-        flex-direction: column;
+      .invite-icon.desktop {
+        display: none;
       }
 
-
-      .invite-icon {
+      .invite-icon.mobile {
         width: 48px;
         height: 48px;
+        display: block;
+      }
+
+      .invite-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
       }
     }
 
@@ -200,11 +184,12 @@
   <div class="invites">
     <a class="invite ewan" target="_blank" href="https://discord.com/invite/pkRxtGw">
       <div class="invite-content">
-        <div class="invite-header">
-          <img class="invite-icon" src="images/logo.webp" alt="Ewan's Server">
-          <span class="invite-name">Ewan's Server</span>
-        </div>
+        <img class="invite-icon desktop" src="images/logo.webp" alt="Ewan's Server">
         <div class="invite-text">
+          <div class="invite-header">
+            <img class="invite-icon mobile" src="images/logo.webp" alt="Ewan's Server">
+            <span class="invite-name">Ewan's Server</span>
+          </div>
           <span class="invite-desc">The home for all of my projects and creations.</span>
           <ul class="invite-reasons">
             <li>Updates on my resource packs and projects</li>
@@ -218,11 +203,12 @@
     </a>
     <a class="invite rps" target="_blank" href="https://discord.com/invite/BBRcuWgEvR">
       <div class="invite-content">
-        <div class="invite-header">
-          <img class="invite-icon" src="images/rps.webp" alt="Resource Pack Development">
-          <span class="invite-name">Resource Pack Development</span>
-        </div>
+        <img class="invite-icon desktop" src="images/rps.webp" alt="Resource Pack Development">
         <div class="invite-text">
+          <div class="invite-header">
+            <img class="invite-icon mobile" src="images/rps.webp" alt="Resource Pack Development">
+            <span class="invite-name">Resource Pack Development</span>
+          </div>
           <span class="invite-desc">A community for Minecraft resource pack developers of all skill levels.</span>
           <ul class="invite-reasons">
             <li>Vanilla, vanilla shaders, and modded pack development</li>
