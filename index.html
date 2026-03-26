@@ -38,7 +38,6 @@
       font-size: 2rem;
       font-weight: 700;
       text-shadow: -2px 2px 1px #00000080;
-      letter-spacing: 2px;
     }
 
     .subtitle {
@@ -59,12 +58,25 @@
       flex-direction: column;
       width: 450px;
       max-width: calc(100vw - 40px);
-      padding: 20px 25px;
       background: #1A1A1A;
       border-left: 3px solid;
       text-decoration: none;
       color: #FFF;
       transition: background 0.15s;
+      overflow: hidden;
+    }
+
+    .invite-banner {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .invite-body {
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     a.invite:hover .invite-join {
@@ -183,6 +195,8 @@
   <p class="subtitle">Choose a server to join</p>
   <div class="invites">
     <a class="invite ewan" target="_blank" href="https://discord.com/invite/pkRxtGw">
+      <img class="invite-banner" src="images/logo_banner.webp" alt="">
+      <div class="invite-body">
       <div class="invite-content">
         <img class="invite-icon desktop" src="images/logo.webp" alt="Ewan's Server">
         <div class="invite-text">
@@ -200,8 +214,11 @@
         </div>
       </div>
       <div class="invite-join"><i class="fa-brands fa-discord"></i> Join Server</div>
+      </div>
     </a>
     <a class="invite rps" target="_blank" href="https://discord.com/invite/BBRcuWgEvR">
+      <img class="invite-banner" src="images/rps_banner.webp" alt="">
+      <div class="invite-body">
       <div class="invite-content">
         <img class="invite-icon desktop" src="images/rps.webp" alt="Resource Pack Development">
         <div class="invite-text">
@@ -220,6 +237,7 @@
         </div>
       </div>
       <div class="invite-join"><i class="fa-brands fa-discord"></i> Join Server</div>
+      </div>
     </a>
   </div>
 </body>
